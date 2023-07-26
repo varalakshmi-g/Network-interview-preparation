@@ -65,11 +65,63 @@ In the transition from IPv4 to IPv6, many devices and networks now support both 
 
 Question 5: What is routing?
 
+Ans: Routing is the process of selecting the best path or route for data packets to travel from the source to the destination across a network. In computer networks data is broken into smaller units called packets.
+
+The main purpose of routing is to ensure that data packets reach their destinations efficiently and reliably. When a device sends data to another device on the same network, the routing process is relatively starightforward as the devices are directly connected. However, when the destination is on a different network, routing comes into play.
+
+When a router receives a data packet, it checks the destination IP address against its routing table to determine the next hop or the next router to which it should send the packet. The router repeats this process at each hop along the route until the packet reaches its final destination.
+
 Question 6: What is subnet?
+
+Ans: Subnet is short for subnetwork. It is a logical division of an IP network. It was created by partitioning a single large network into smaller, more manageable segments to improve network performance, security and efficiency.In a typical IP network, each device is assigned an IP address, which consists of two parts: the network portion and the host portion. 
+
+The subnet mask is a 32-bit value used to determine the boundary between the network and host portions of an IP address.For example, consider the IP address "192.168.1.100" with a subnet mask of "255.255.255.0." In this case, the first three octets (192.168.1) represent the network portion, and the last octet (100) represents the host portion. The subnet mask "255.255.255.0" indicates that the first 24 bits (3 octets) are used for the network part, and the remaining 8 bits (1 octet) are used for the host part.
 
 Question 7: What is the difference between Authentication and Authorization?
 
+Ans: Authentication and authorization are two fundamental concepts in computer security and access control, while they are related, they serve distinct purposes.
+
+Authentication:
+
+Authentication is the process of verifying the identity of a user, device or system attempting to access a particular resource or service. Some common methods of authentication includes username and password, Biometric authentication, Two factor authentication or multifactor authentication. Once the authentication process is successful and the system confirms the user's identity, the user is granted access to the system or resource.
+
+Authorization:
+
+Authorization is the process of determining what actions or operations an authenticated user , device or system is allowed to perform once access has been granted.  It involves setting and enforcing access rights and permissions based on the user's identity and the security policies of the system.
+
+In other words, while authentication confirms who you are, authorization determines what you are allowed to do.
+
+For example, after a user is authenticated (by providing the correct credentials), the authorization process determines whether the user has read-only access, read-write access, or no access at all to specific files, folders, or resources.
+
 Question 8: What is gateway?
 
+Ans: In computer networking, a gateway is a network device or software component that serves as an entry or exit point for data traffic between different networks.It acts as an intermediary that facilitates communication and data exchange between networks with different protocols, addressing schemes, or architectures.Gateways are essential for connecting networks that are not directly compatible with each other, allowing them to communicate and exchange data seamlessly. They perform protocol translation, address translation, and other functions to enable data transfer across network boundaries.
+
 Question 9: What is the difference between broad casting and multicasting?
+
+Ans: Broadcasting and multicasting are two methods of transmitting data across a computer network, and they differ in their scope and the number of recipients they target:
+
+Broadcasting: 
+
+Broadcasting is a data transmission method in which a single sender sends a message to all devices on the network and every device connected to the network receives and process the message.
+
+Charateristics of broadcasting:
+
+* Broadcast messages are sent to the network's broadcast address, which is special address that encompasses all devices on the network.
+* In modern networks, broadcasting is typically limited to the local network segment or LAN(Local Area Network).
+* Broadcasting can be useful for certain network management tasks or for disseminating time-sensitive information, but it can also create unnecessary network traffic and pose security risks if not used judiciously.
+
+  Multicasting:
+
+Multicasting is a data transmission method  in which a single sender sends a message to a specific group of recipient devices that have expressed interest in receiving that message. It is a "one-to-many" communication method, where the sender sends the data to a predetermined group of devices, rather than broadcasting to the entire network.
+
+Characteristics of multicasting:
+
+* Multicast messages are sent to a special group address, called a multicast group address. Devices that wish to receive the multicast data must join the multicast group by registering their interest with the network.
+* Multicasting is efficient and scalable as it avoids unnecessary data transmission to devices that are not interested in receiving the data.
+* Multicasting is commonly used for multimedia streaming, video conferencing, software updates, and other applications that require data distribution to a specific group of recipients.
+* Unlike broadcasting, multicasting requires network support (such as multicast-capable routers) to ensure that the multicast data is correctly forwarded to the devices that have joined the multicast group.
+
+In summary, broadcasting is a method where a single message is sent to all devices on the network, while multicasting is a method where a single message is sent to a specific group of devices that have expressed interest in receiving that message. 
+
 
